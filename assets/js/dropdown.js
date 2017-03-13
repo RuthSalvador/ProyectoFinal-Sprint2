@@ -18,4 +18,4 @@ window.onclick = function(event) {
 
 var pers = prompt("Bienvenido, por favor ingresa tu nombre");
 var hello = document.getElementById('hello');
-hello.innerHTML = "Hola " + pers;
+hello.innerHTML = "Hola coder " + pers;

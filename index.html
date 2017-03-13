@@ -1,110 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proyecto Final por Ruth Salvador</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav style="text-align:right">
-    <div class="dropdown"><label id="hello">Bienvenido</label>
-    	<button onclick="myFunction()" class="dropbtn">&#9776;</button>
-    	<div id="myDropdown" class="dropdown-content">
-    		<a href="perfil.html">Coders</a>
-    		<a href="salir.html">Salir</a>
-    	</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto Final Sprint 2 por Ruth Salvador</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav style="text-align:right">
+        <div class="dropdown"><label id="hello"></label>
+        	<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+        	<div id="myDropdown" class="dropdown-content">
+        		<a href="perfil.html">Coders</a>
+        		<a href="salir.html">Salir</a>
+          </div>
+        </div>
       </nav>
-    </div>
       <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css" media="screen" />
-    <script type="text/javascript" src="assets/js/dropdown.js">
-    </script>
-  </header>
-  <img src="assets/img/logo-laboratoria.svg" hspace="600"  height="500" width="500">
-  <section>
-    <h2><strong>¿Qué es Laboratoria?</strong></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h3><strong>Temas</strong></h3>
-
-    <input type="button" value="Sprint 1" onclick="mostarOcultar('text1')">
-    <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
-    <input type="button" value="Sprint 3" onclick="mostarOcultar('text3')"><br/>
-
-    <div id="todo">
-
-    <div id="text1">
-      <h3>Sprint 1: Introducción al JavaScript</h3>
-      <ol>
-        <li>Fundamentos de Programación</li>
-        <li>Funciones</li>
-        <li>Arreglos</li>
-        <li>Objetos</li>
-      </ol>
-      <hr>
-      <h3>Quiz</h3>
-      <div id="quiz1">
-        <form class="" action="" method="get">
-          <strong>Existen dos tipos de funciones</strong></br></br>
-          <input type="radio" id="q1" name="opc1">Expresadas y declaradas</br>
-          <input type="radio" id="q2" name="opc1">Explícitas y declaradas</br>
-          <input type="radio" id="q3" name="opc1">Expresadas y derivadas</br></br>
-
-        </form required>
-        <form class="" action="" method="get">
-          <strong>Es una propiedad de los arreglos</strong></br></br>
-          <input type="radio" name="opc2">clear</br>
-          <input type="radio" name="opc2">pop</br>
-          <input type="radio" name="opc2">add</br></br>
-        </form>
-        <form class="" action="" method="get">
-          <strong>Un objeto tiene ........ y .......</strong></br></br>
-          <input type="radio" name="opc3">números y letras</br>
-          <input type="radio" name="opc3">partes y validaciones</br>
-          <input type="radio" name="opc3">propiedades y valores</br></br>
-        </form>
-        <input type="button" value="ENVIAR" class="btn btn-default btn-lg" id="enviar1" onclick="prueba1()">
-    </div></div>
-
-    <div id="text2">
-      <h3>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h3>
-      <ol>
-        <li>Ciclo de vida del desarrollo web y arquitectura básica cliente/Servidor / Configuración del ambiente de trabajo e introducción a git</li>
-        <li>HTML y JavaScript en el navegador</li>
-        <li>Manejo de comandos básicos de git en la terminal</li>
-        <li>Pruebas Unitarias</li>
-        <li>GIT / Resolución de conflictos / Branching model</li>
-        <li>DOM</li>
-      </ol>
-      <hr>
-      <h3>Quiz</h3>
-        <form class="" action="" method="get">
-          <strong>¿Cuál es el comando para iniciar un repositorio desde la consola?</strong></br></br>
-          <input type="radio" name="opc4">git init .</br>
-          <input type="radio" name="opc4">git init</br>
-          <input type="radio" name="opc4">git init add</br></br>
-        </form>
-        <form class="" action="" method="get">
-          <strong>¿Cuál es la finalidad de hacer una prueba unitaria?</strong></br></br>
-          <input type="radio" name="opc5">Comprobar que el código funcione correctamente</br>
-          <input type="radio" name="opc5">Darle valores a los parámetros de dichas funciones</br>
-          <input type="radio" name="opc5">No tienen ningún fin</br></br>
-        </form>
-        <form class="" action="" method="get">
-          <strong>¿Qué significa DOM?</strong></br></br>
-          <input type="radio" name="opc6">Dual Objet Model</br>
-          <input type="radio" name="opc6">Document Objet Model</br>
-          <input type="radio" name="opc6">Document Obsolet Model</br></br>
-        </form>
-        <input type="button" value="ENVIAR" class="btn btn-default btn-lg" id="enviar1" onclick="">
-    </div>
-
-    <div id="text3">No hay leccione (todavía)</div>
-    </div>
-  </section>
-  <script type="text/javascript" src="assets/js/main.js">
-  </script>
-</body>
+      <script type="text/javascript" src="assets/js/dropdown.js">
+      </script>
+    </header>
+    <center><img src="assets/img/logo-laboratoria.svg" height="180" width="500"></center>
+    <section>
+      <h2><strong>¿Qué es Laboratoria?</strong></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h3><strong>Temas</strong></h3>
+        <input type="button" value="Sprint 1" onclick="mostarOcultar('text1')">
+        <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
+        <input type="button" value="Sprint 3" onclick="mostarOcultar('text3')"><br/>
+      <div id="todo">
+        <div id="text1">
+          <h3>Sprint 1: Introducción al JavaScript</h3>
+            <ol>
+              <li>Fundamentos de Programación</li>
+              <li>Funciones</li>
+              <li>Arreglos</li>
+              <li>Objetos</li>
+            </ol>
+          <hr>
+          <h3>Quiz</h3>
+          <div id="quiz1">
+            <form method="get">
+              <strong>Existen dos tipos de funciones</strong></br></br>
+                <input type="radio" name="opc1">Expresadas y declaradas</br>
+                <input type="radio" name="opc1">Explícitas y declaradas</br>
+                <input type="radio" name="opc1">Expresadas y derivadas</br></br>
+              <strong>Es una propiedad de los arreglos</strong></br></br>
+                <input type="radio" name="opc2">clear</br>
+                <input type="radio" name="opc2">pop</br>
+                <input type="radio" name="opc2">add</br></br>
+              <strong>Un objeto tiene ........ y .......</strong></br></br>
+                <input type="radio" name="opc3">números y letras</br>
+                <input type="radio" name="opc3">partes y validaciones</br>
+                <input type="radio" name="opc3">propiedades y valores</br></br>
+            </form>
+            <input type="button" value="ENVIAR" class="btn btn-default btn-lg" onclick="prueba1()">
+          </div>
+        </div>
+        <div id="text2">
+          <h3>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h3>
+            <ol>
+              <li>Ciclo de vida del desarrollo web y arquitectura básica cliente/Servidor / Configuración del ambiente de trabajo e introducción a git</li>
+              <li>HTML y JavaScript en el navegador</li>
+              <li>Manejo de comandos básicos de git en la terminal</li>
+              <li>Pruebas Unitarias</li>
+              <li>GIT / Resolución de conflictos / Branching model</li>
+              <li>DOM</li>
+            </ol>
+          <hr>
+          <h3>Quiz</h3>
+          <div id="quiz2">
+            <form method="get">
+              <strong>¿Cuál es el comando para iniciar un repositorio desde la consola?</strong></br></br>
+                <input type="radio" name="opc4">git init .</br>
+                <input type="radio" name="opc4">git init</br>
+                <input type="radio" name="opc4">git init add</br></br>
+              <strong>¿Cuál es la finalidad de hacer una prueba unitaria?</strong></br></br>
+                <input type="radio" name="opc5">Comprobar que el código funcione correctamente</br>
+                <input type="radio" name="opc5">Darle valores a los parámetros de dichas funciones</br>
+                <input type="radio" name="opc5">No tienen ningún fin</br></br>
+              <strong>¿Qué significa DOM?</strong></br></br>
+                <input type="radio" name="opc6">Dual Objet Model</br>
+                <input type="radio" name="opc6">Document Objet Model</br>
+                <input type="radio" name="opc6">Document Obsolet Model</br></br>
+            </form>
+            <input type="button" value="ENVIAR" class="btn btn-default btn-lg" onclick="prueba2()">
+          </div>
+        </div>
+        <div id="text3">
+          <p>No hay lecciones (todavía)</p>
+        </div>
+      </div>
+    </section>
+    <footer>Proyecto realizado por <strong>Ruth Abigail Salvador Zorrilla</strong></footer>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
 </html>
