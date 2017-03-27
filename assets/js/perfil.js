@@ -12,6 +12,6 @@ var datos = document.getElementById("datos");
 
 
  coders.forEach(function(elemento){
-   datos.innerHTML += "<table><tr><td>Nombre: "+elemento.nombre+"</br>Apellido: "+ elemento.apellido+"</br>Rol: "+
-                       elemento.promocion+"</br>Promoción: "+ elemento.estado+"</br></br></td></tr></table>";
+   datos.innerHTML += "<div class='div-coder'> Nombre: " + elemento.nombre + "<br>Apellido: " + elemento.apellido + "<br>Rol: " +
+                       elemento.promocion + "<br>Promoción: " + elemento.estado + "<br><div>";
  });

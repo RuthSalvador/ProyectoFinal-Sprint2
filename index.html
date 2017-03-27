@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto Final Sprint 2 por Ruth Salvador</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
   </head>
   <body>
@@ -23,16 +23,16 @@
       <script type="text/javascript" src="assets/js/dropdown.js">
       </script>
     </header>
-    <center><img src="assets/img/logo-laboratoria.svg" height="180" width="500"></center>
-    <section>
+    <img src="assets/img/logo-laboratoria.svg" height="180" width="500">
+    <section class="contenedor-contenido-pagina ">
       <h2><strong>¿Qué es Laboratoria?</strong></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <h3><strong>Temas</strong></h3>
         <input type="button" value="Sprint 1" onclick="mostarOcultar('text1')">
         <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
-        <input type="button" value="Sprint 3" onclick="mostarOcultar('text3')"><br/>
+        <input type="button" value="Sprint 3" onclick="mostarOcultar('text3')"><br>
       <div>
-        <div id="text1">
+        <div id="text1" class="hidden">
           <h3>Sprint 1: Introducción al JavaScript</h3>
             <ol>
               <li>Fundamentos de Programación</li>
@@ -44,18 +44,18 @@
           <h3>Quiz</h3>
           <div id="quiz1">
             <form method="get">
-              <strong>Existen dos tipos de funciones</strong></br></br>
-                <input type="radio" name="opc1">Expresadas y declaradas</br>
-                <input type="radio" name="opc1">Explícitas y declaradas</br>
-                <input type="radio" name="opc1">Expresadas y derivadas</br></br>
-              <strong>Es una propiedad de los arreglos</strong></br></br>
-                <input type="radio" name="opc2">clear</br>
-                <input type="radio" name="opc2">pop</br>
-                <input type="radio" name="opc2">add</br></br>
-              <strong>Un objeto tiene ........ y .......</strong></br></br>
-                <input type="radio" name="opc3">números y letras</br>
-                <input type="radio" name="opc3">partes y validaciones</br>
-                <input type="radio" name="opc3">propiedades y valores</br></br>
+              <strong>Existen dos tipos de funciones</strong><br><br>
+                <input type="radio" name="opc1">Expresadas y declaradas<br>
+                <input type="radio" name="opc1">Explícitas y declaradas<br>
+                <input type="radio" name="opc1">Expresadas y derivadas<br><br>
+              <strong>Es una propiedad de los arreglos</strong><br><br>
+                <input type="radio" name="opc2">clear<br>
+                <input type="radio" name="opc2">pop<br>
+                <input type="radio" name="opc2">add<br><br>
+              <strong>Un objeto tiene ........ y .......</strong><br><br>
+                <input type="radio" name="opc3">números y letras<br>
+                <input type="radio" name="opc3">partes y validaciones<br>
+                <input type="radio" name="opc3">propiedades y valores<br><br>
             </form>
             <input type="button" value="ENVIAR" class="btn btn-default btn-lg" onclick="prueba1()">
           </div>
@@ -74,28 +74,28 @@
           <h3>Quiz</h3>
           <div id="quiz2">
             <form method="get">
-              <strong>¿Cuál es el comando para iniciar un repositorio desde la consola?</strong></br></br>
-                <input type="radio" name="opc4">git init .</br>
-                <input type="radio" name="opc4">git init</br>
-                <input type="radio" name="opc4">git init add</br></br>
-              <strong>¿Cuál es la finalidad de hacer una prueba unitaria?</strong></br></br>
-                <input type="radio" name="opc5">Comprobar que el código funcione correctamente</br>
-                <input type="radio" name="opc5">Darle valores a los parámetros de dichas funciones</br>
-                <input type="radio" name="opc5">No tienen ningún fin</br></br>
-              <strong>¿Qué significa DOM?</strong></br></br>
-                <input type="radio" name="opc6">Dual Objet Model</br>
-                <input type="radio" name="opc6">Document Objet Model</br>
-                <input type="radio" name="opc6">Document Obsolet Model</br></br>
+              <strong>¿Cuál es el comando para iniciar un repositorio desde la consola?</strong><br><br>
+                <input type="radio" name="opc4">git init .<br>
+                <input type="radio" name="opc4">git init<br>
+                <input type="radio" name="opc4">git init add<br><br>
+              <strong>¿Cuál es la finalidad de hacer una prueba unitaria?</strong><br><br>
+                <input type="radio" name="opc5">Comprobar que el código funcione correctamente<br>
+                <input type="radio" name="opc5">Darle valores a los parámetros de dichas funciones<br>
+                <input type="radio" name="opc5">No tienen ningún fin<br><br>
+              <strong>¿Qué significa DOM?</strong><br><br>
+                <input type="radio" name="opc6">Dual Objet Model<br>
+                <input type="radio" name="opc6">Document Objet Model<br>
+                <input type="radio" name="opc6">Document Obsolet Model<br><br>
             </form>
             <input type="button" value="ENVIAR" class="btn btn-default btn-lg" onclick="prueba2()">
           </div>
         </div>
-        <div id="text3">
+        <div id="text3" class="hidden">
           <p>No hay lecciones (todavía)</p>
         </div>
       </div>
     </section>
-    <footer>Proyecto realizado por <strong>Ruth Abigail Salvador Zorrilla</strong></footer>
+    <footer>Proyecto realizado por <strong>Ruth Abigail Salvador Zorrilla</strong></footer><br>
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

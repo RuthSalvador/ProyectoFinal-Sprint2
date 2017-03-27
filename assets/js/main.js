@@ -5,51 +5,23 @@ var mostarOcultar = function(divtexte) {
 	var text2 = document.getElementById('text2');
 	var text3 = document.getElementById('text3');
 
-  	if (divtext.style.display == "block" ) {
-  		divtext.style.display = "none";
 
-  	} else{
-  		divtext.style.display = "block";
-  	}
-}
-
-/*var mostarOcultar = function(){
-
-if (divtext.id == "text1"  ) {
-	divtext.style.display ="block";
-	text3.style.display = "none";
-	text2.style.display ="none";
-
-	
-
-
-  if (text1.style.display == "block"){
+	if (divtexte == "text1") {
+		divtext.style.display ="block";
 		text2.style.display = "none";
 		text3.style.display = "none";
 
-  } else if (text1.style.display == "none"){
-    text1.style.display = "block";
+	} else if (divtexte == "text2") {
+		divtext.style.display ="block";
+		text1.style.display = "none";
+		text3.style.display = "none";
 
-  } else if (text2.style.display == "block"){
-    text2.style.display = "none";
-
-  } else if (text2.style.display == "none"){
-
-    text2.style.display = "block";
-
-}}*/
-
-
-
-
-
-
-
-
-
-
-
-
+	} else if (divtexte == "text3") {
+		divtext.style.display ="block";
+		text1.style.display = "none";
+		text2.style.display = "none";
+	}
+}
 
 /*** Respuestas correctas ***/
 
